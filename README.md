@@ -1,1 +1,119 @@
 ## Inicio 15:45
+
+
+
+# LQDI 
+
+Projeto desenvolvido para processo seletivo dev Full-Stack (LQDI).
+
+
+
+## Funcionalidades
+
+- Cadastro de usuarios
+- Envio de email apos criação de conta
+- Listagem de usuários e email cadastrados 
+- Envio de attachments por email (em desenvolvimento)
+
+
+## Instalação 🚀
+
+Instale com composer
+
+```bash
+  cd backend
+  composer install
+```
+
+Troque o arquivo .env.exemple para .env, para usar as variáves para conectar no bando de dados
+
+
+  
+Rode as migrates e rode o projeto
+
+```bash
+  php artisan migrate
+  php artisan serve
+```
+
+Instale as dependencias via npm
+
+
+```bash
+  cd frontend
+  npm install
+```
+
+## Referência 📄
+
+ - [Laravel](https://laravel.com/)
+ - [Vuejs](https://vuejs.org/)
+ - [tailwindcss](https://tailwindcss.com/)
+
+
+## Stack utilizada
+
+**Front-end:** Vuejs(Typescript), TailwindCSS
+
+**Back-end:** PHP, Laravel 
+
+
+## Documentação da API
+
+#### Retorna todos os usuários
+
+```http
+  GET /api/contact/create
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+
+
+
+#### Cria um usuário
+
+```http
+  POST /api/contact/create
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+
+#### Body da requisição
+
+```bash
+  {
+    name: required
+    email: required
+    message: optional
+    subject: optional
+  }
+```
+
+
+## Screenshots
+
+![App Screenshot](https://lh3.googleusercontent.com/fzsmfUOTvpSffvn-QPadYc-kZpSE8IcM3myK5GW2Mqisk4QywYssB9L-4aEsfT7-pvoHUZz7IC5K8cOBZaiJqd-7bEsTnZSbyZflFRItGrKarLqifz8a11HlckuuEy33simnpYEEHw4agKnSiTNBJawTFIpHQfVf2dgYaw0eq0gNpkoKN617YLIQPg_YECT2jwoELir2gfW_wx3HZVd0KKfIM0U8IlqpRio0r7ZpUhnnh4qyOXWMDgBBlRnJQTBephJb8UHbvLC0pmLN0FMg1sJVEa09qGrH71z1dtYe-Vypn1YwSnZjwCt9n6QMcWK8c54vN6HjjMwx4QokdhcJrsPxveMHVYdVzvMQgQXMubxQn1F5AAvkk95w32gxVrI-dmVpR_6fNEr95lxNWmtAP5tzOZMZ-b-GPG3tQBfHDTTkJt7CZ1U0GrTm_j8CeXcSV-24PXktoNTsb79ori9sMHQubDapT0uRS5fGUCwG8kC5F9gQfozj1zNcLi_En6-WXJ4IwDZczg6eEI5gW30aSpVFxoyGdBuVg05Kk0VXP9U3ZeP5zjXRsN4mIuXd-tK56ELkkzXr7hHDcPpY-cXhrqWjsR-hD5DGGx0Tq6WeXgXRiR22W9tAZESA0ifCTn2YdqyymFP99pLS56B8i8vCc5gXxUJYQ2SMxcl6wYyMs-t5f3hS-U5tXsrnnjlj_PchgitI8dzJmdoy3zywJV9UufdImpLsm-yaeud2kmbwd3kPB-h21g1PmRJrifyGPy5Sko1DH6AMncGJqJEeCcAaK5zS3MWzVjErjVLPDN9M8pJMsi8gguFW72hiVlVsT7TZc7w-zQ1fnyLbG71xgVLyfb2fDD2uSjYo3bsDQca7Jy5HBjByWDT_v_RGTes5FZa_taUiivp0dN0yjgTSDiuH2BzGpLzspv42fuFqZduxlIDtFA=w690-h388-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/r8dOJV4Cup8GvlmogxNsi2OdslbKQFp3SWHYtpJo8hdDBjqxrP39H5oyKwMQEZUoH9-JzY9n3cGqvLLC4qF-tPHjOVrHp8aHOHk-ATd2NVjISOWjsG6aRiLJ-H6t8GWTKIhdZIhOjn5ofDfOFXVo3IfEvi3UZhGd-9zD1tqfZqud2aha-2acds-p1J-A71FVDfeccCO4oVbCt8XZlomMYDfnQtvnoUxf6d_t5LoC7t2N_Y6kaPO96A_LW518t-AF6QRo0vHyA8U1L6-fBZLGToE9Ge4Ukmk8_B1kqy15vTNlLBlEx4x-sdeGuGeRFvkQymHJmXKxdU91NpGU7U7ofeZlr0wBYlN7ovUK--8KKIcYodao4Qd5lv9AP9W64wshGR-LTJwXaXZoxjgSEU_r_zwmBhocKeyS2soKrsZu63IOE8tdV0J1XjSyVQtGtug1KKb9XeOA0QdFBrVB_nkE3Qe_j--_emiP-1bGKxbUtkncQatLvQBampmenX_dxOgvva121IsK2gevyHmRG0taojnDb9-u53qRR3Y2J-FBg--3vdwVzOVmvIWgKjx2349ca1O3GapwlDCOyVCvmbPw60pDUd2qBVzDiueMo-GNefU-LynrjBxuE7pJy2kcgPwch69jLqEmAqJi4iYEQcWN8JvbRjMa0Beih7Q0fMHYjKc-NuDeYMGZt6f87tZJuMZdmkB1lKVrP4z_vGiUgJ0RllqT-Nl_tslXaO9wfoxyRMet48TEkM0Gr_lBZZhisFSDYR8L4u-EcCUOsF7WGbc6GYaqFP2Rav1Vc_AFHI0TuP8ryq9JsjZCVLPU0H1Plo3t0AU7Q7x6lS9mwFcioX4lLGVqsG3qQXSDpEbr3tsW02bnpEulDg_9pw32A6d6yKo4bxORL2_Q_BnT_gToyxMFsatgLelG12r9kxIsUrSRbGsdhw=w1897-h929-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/fq_49YfLi8sHn7bxcOYhnL1gE0oizgy4kgVXAQ5HNHurf08IND8eorn0VcfovQHa65qfrsSKZnDQ2nwlxNAk2RW7YPVSpIIfg45bRPzdfVXByP5YnTCWseRIarW5mcyx61BUhQAIKCA4QdXzZPZ23vPipZhr2ij05QDBN1cL08x9hv7jgAfDtBuxzNy03vrcWV5PgRgcMMHuAzm6Aj-nzW6_9eXkpytLiUjD4Qrnu9k-j-j-Zxw58LUbx32K4H42PPiPKjVviRFpG-3ba29G1Js6cb8KvGsTM6PsJJgRzZJw07xPyTH4PqkTHLIUhesEf5Ost0pDX_m0g22A4kkv5V1SnqO_Oai-6AYuKv1lXw9_Xzuck61xcrmSPKLww3PSzDKfVocnvPT9i2maM-R_16YYWu4zdd7bHU4OM19nt5xeBrfF0ibdwenpgiS7N_6EXlYY4iHSjZNKeXIbGlBW_mGUvpLOohPaZF4JY5zHzGXpZTr4Xrfzjz1dJQzKYEWQRQ8q7YtT_ba9de6bARfMvw-XzYlIgw2_B0I1wOMiDuZcjbFrELyT0tditRdMcv9WfOLhJljYeTPxCTQT07l5lQ15t6_HII6e2NU8BkIwVvW7VzHsWVlzFNCpN_OTRFZN7S5It0TkrZIcq2zidXBSLi7_AV9m7tvPbMM8g8JlB3-FiPidOVkAew89S62dapco6bi1YNsf6BFvMtg99rnw-7aH2t6qr-NweEvRxqhPGTiDmAn8HM622snjoe3VIENkpZln0t8NQyN5rkLQozWMtjZ6fJ6gDBoba0B44qhtxTXMLSQCL7mCOJ01AQVbu3UeC7fazwVhYjOx9t7rjY1-1KxLJdBD8N7KiI--gpkPf1QDyNbrbA8u48I1eYYOwtU5_aQKUJlVHvijX1mNC5abCb97Wmj46DWwH7plBv5IrqOULA=w1080-h529-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/lIfoS-P1bA2-SZsMfVLHuhlo8pd5teHUaNhxIXMNMr4I4kafY9_kjo0UaR4Q8UpT_CewOyLgl8c52hONlqiEPtt5QBKQlVonjDn70Op8KOW3VCabF1Z03hlll5qkY14173C1MH1jwEsLAJx0CLYIwJfdC9YfHeqXhkhK8fJFdEw1k-aR_qZHdJoFxbc9ZyXniCAFb1FxsQsabQBMvpNW93-tXjmnVucDSJGChQ-yGzSuKouD9eO4oUEyxNpFjyCse1xphi4FTUqW2rHziMBHkOO2pyemloR_Y7rwxzx3s-j0HNFSciA1rr7yh_qAJTvkYVa_AXJhjcU5a5O54NQUuXcQFr6L2Jrk5FJjF6UpTXsTlpQpvdNQFA-ASqARkartUjq4d5dbwnE4FgwTLHTBrqTVr-zN_oK5Gak52wO5wevLC3Z06wIL4hL5wLg1mLcryUGlrHtnHCIPn6hT_W5Busov4wXi-G-Md5Ks2swbVUxLd9RJUMG4Y_-IO6ICS9f-HV306aI9DR_spk4xIluhAipEvWAMTIK0hPk8_zmR-clQ3dlpGoMuiMwAwA8JKqQ4FDkeXWpphqOrhRgqGynKUCWppnuEzS9LY4c1N_u_PxPw32Xuh4BHBtHCrctz_PrqsIabhlN0L4ma0lpPbKFG3TNqlhh9Hxb0S_4Xy5Nb0EMXw7oMhiGrU7ZZPj_3omWNtdqbV5zrOQ9b8z9z7wCNq8Pb3jvU3my7YWsf7omSp63K8c7fZyHC7Vza4lFsELr4xnBQvp46vMvocvpdkQF5uf9FpOyg75EaAAccGOjagK4UiMvUv2V8yajgpHo4l2i0Pa_b12t9rAEo5bbuOF4fD6DSvxIRJEStPTbuiOkcVxAcu-ddg5S4NFYTlBm3ZqcBdfZ4N4dzO2n4P6gBdVlQlbQidZjJotjPV3EIiKjrfgdoZw=w1080-h530-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/bDrLjo_w1NSdL8WzvLz4On8gy5yMFs6ES01qg21PWFVK3IxmupFGLXzHvQ-m5JRsUkFKLVHS59zRq1pAH4ZSufveq0wh4oZRBzjqyQ3NBdU8OitbQpuQynOm-cuKBtDZrphMVdqFLyKXvWPYpqN_eLXhrooGp2cBMTEXWPwjsb1UUd_ghkheekMuaeJZdIAKjRJoiRKxLJF_4kpK4fWC9Gg2i8d0HiCOUpZKmd1B2jFIG-MK0yElS-MylgUCkfjIdP6MECNBz37G5OcYavkAKfao4o9fmy7NjDFuGLWFHJ44q2RH1O55K4r9UJ7BRcd_UEg5hi2hJlLOAKkEpS8G9Yk9ne0Zju6iwPX5fwewFIoKjWrXzAihwDEz3-pavSLSp3qHN5z3OinX0-dAGCcA30aQ0wJ7b-72jeM2NeVnjj-Pf2Yl9mnl7WVnNVzCctsCXPI6IroCflOjuDEPCm8mADCVjYXtZOgRzRfYFmHU6uip5WNyGqxzkCHZhNOEl2EiKbmP6Wvvm14LLkqHy2ngujYmXveDyB-f-fyrYps-2540xnYyZWiBAhcf9yqUt13VJFSP00RtXzgse2UO4V8sqdmRfUTZjdFwtgXiUBOer7wRmrGClWpVmxmIwg3kPeNZn-UHuzR48LcQBn7cHdzJ6UZAz_WFb9qAhlw2ZXmBSb2FbID8QTY97Nlj6M8VNYfdtO-dQZpPqtBnApqx0OK-6TGwWCylawWpk50FxxkVy4SqLw3QSKMeIbXp3E2bhVtt9iLLmJkFpsg75PoBvDBDjnkR6IFtnmpBsp7hakwM_IBJpcLQK2oSI6MuWd2Xh5jBLiygVq7pIJN_eR0f3NBv7vDhFCnzB6A41eTnOmjSVwqbBF66zwOSRUC0J_cxV4w4hrRaGw_u-nEeJ60vP_lUpHRstDvu24StRiWf7xbUr-UvTA=w923-h884-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/bDrLjo_w1NSdL8WzvLz4On8gy5yMFs6ES01qg21PWFVK3IxmupFGLXzHvQ-m5JRsUkFKLVHS59zRq1pAH4ZSufveq0wh4oZRBzjqyQ3NBdU8OitbQpuQynOm-cuKBtDZrphMVdqFLyKXvWPYpqN_eLXhrooGp2cBMTEXWPwjsb1UUd_ghkheekMuaeJZdIAKjRJoiRKxLJF_4kpK4fWC9Gg2i8d0HiCOUpZKmd1B2jFIG-MK0yElS-MylgUCkfjIdP6MECNBz37G5OcYavkAKfao4o9fmy7NjDFuGLWFHJ44q2RH1O55K4r9UJ7BRcd_UEg5hi2hJlLOAKkEpS8G9Yk9ne0Zju6iwPX5fwewFIoKjWrXzAihwDEz3-pavSLSp3qHN5z3OinX0-dAGCcA30aQ0wJ7b-72jeM2NeVnjj-Pf2Yl9mnl7WVnNVzCctsCXPI6IroCflOjuDEPCm8mADCVjYXtZOgRzRfYFmHU6uip5WNyGqxzkCHZhNOEl2EiKbmP6Wvvm14LLkqHy2ngujYmXveDyB-f-fyrYps-2540xnYyZWiBAhcf9yqUt13VJFSP00RtXzgse2UO4V8sqdmRfUTZjdFwtgXiUBOer7wRmrGClWpVmxmIwg3kPeNZn-UHuzR48LcQBn7cHdzJ6UZAz_WFb9qAhlw2ZXmBSb2FbID8QTY97Nlj6M8VNYfdtO-dQZpPqtBnApqx0OK-6TGwWCylawWpk50FxxkVy4SqLw3QSKMeIbXp3E2bhVtt9iLLmJkFpsg75PoBvDBDjnkR6IFtnmpBsp7hakwM_IBJpcLQK2oSI6MuWd2Xh5jBLiygVq7pIJN_eR0f3NBv7vDhFCnzB6A41eTnOmjSVwqbBF66zwOSRUC0J_cxV4w4hrRaGw_u-nEeJ60vP_lUpHRstDvu24StRiWf7xbUr-UvTA=w923-h884-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/ojGHBBhAdww-gXV6fY9HEAiA6DOxGUj23U3gjnrNrqYkKxEE1uiQXQew8PLaiaxKrBxojNDTY-u0GXjrJXH666mhTA7lPd1Ex58x5yDPfrYbL0_ioBQXxi5h-Hb6bto7HjUZsejXYuJGDoVPWGnqxl3lMwbfTmqomc_MQJ9sy9sQK6_ILx7XWUN_Ep5JDbov-uuDwqqek_a2pkq_iW02XsRRjvpOi8TcdZn2iBmmwO7tLhSR1sUlvAUlkyF8QlVFlo4HTZqTZK-rlnhvV6kK0PQO-UEDYcFH2ylGBo4BbO1W40CmUAUjNJLie4-ZjEaQQ8-KkmoaCvNSp3fLcg-YrMHOT15yACG4hvYQBM9gsJNL-bgiSEb5XV2F492Jp8L-1Xq2pf1u4Ue335vF60UtKuC-HpZgWhbcfvsRCvhTce0PuwAyn14Un8B7jo-VpzQLWzffTIs_P4MJwlUveUpkhvKlylxHkpVp779HXWjoUoEO31nZI7o9KeWbOVq0jpxnS45JFEn4uVWS5s4K3HGMdNhENQgbMn-D7AD5ZPzu9EOzm3j-kZ75VWK8eBPTr_LvDT_fqpt5CRmSTYowYL_eDwcKVO9cpWb3FWhgpApRUazknaGq46JGGKkOEV50gySnoVtLXdzfgi4FiFtE-lj57t6Iz01hquZqs-P7zl0ZfPfoliBZjRkdAXRFwuLyTh7O95XYY3CvWSoyvAdoC1FgEIdMdt49dP-F6xTVCW-YjtrJGN8mpdKTTCv0czcB1xTyZYCl77d-sVwtqF1rt51U2mQURGr8IhBi9jGgKrcNX6QazRBJRuj8Kgm8LQBsdgzY3Gtxu_YFfBkrnUJnV7pDgbotDUV16lleisEsn8vgO6KSo4s4o3keeHv0QZ0tEMbCBKKhy48zkd2ONa3h1eF3h3L27mrx8fUB0VMfrXvwMxH_Fg=w768-h896-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/bDrLjo_w1NSdL8WzvLz4On8gy5yMFs6ES01qg21PWFVK3IxmupFGLXzHvQ-m5JRsUkFKLVHS59zRq1pAH4ZSufveq0wh4oZRBzjqyQ3NBdU8OitbQpuQynOm-cuKBtDZrphMVdqFLyKXvWPYpqN_eLXhrooGp2cBMTEXWPwjsb1UUd_ghkheekMuaeJZdIAKjRJoiRKxLJF_4kpK4fWC9Gg2i8d0HiCOUpZKmd1B2jFIG-MK0yElS-MylgUCkfjIdP6MECNBz37G5OcYavkAKfao4o9fmy7NjDFuGLWFHJ44q2RH1O55K4r9UJ7BRcd_UEg5hi2hJlLOAKkEpS8G9Yk9ne0Zju6iwPX5fwewFIoKjWrXzAihwDEz3-pavSLSp3qHN5z3OinX0-dAGCcA30aQ0wJ7b-72jeM2NeVnjj-Pf2Yl9mnl7WVnNVzCctsCXPI6IroCflOjuDEPCm8mADCVjYXtZOgRzRfYFmHU6uip5WNyGqxzkCHZhNOEl2EiKbmP6Wvvm14LLkqHy2ngujYmXveDyB-f-fyrYps-2540xnYyZWiBAhcf9yqUt13VJFSP00RtXzgse2UO4V8sqdmRfUTZjdFwtgXiUBOer7wRmrGClWpVmxmIwg3kPeNZn-UHuzR48LcQBn7cHdzJ6UZAz_WFb9qAhlw2ZXmBSb2FbID8QTY97Nlj6M8VNYfdtO-dQZpPqtBnApqx0OK-6TGwWCylawWpk50FxxkVy4SqLw3QSKMeIbXp3E2bhVtt9iLLmJkFpsg75PoBvDBDjnkR6IFtnmpBsp7hakwM_IBJpcLQK2oSI6MuWd2Xh5jBLiygVq7pIJN_eR0f3NBv7vDhFCnzB6A41eTnOmjSVwqbBF66zwOSRUC0J_cxV4w4hrRaGw_u-nEeJ60vP_lUpHRstDvu24StRiWf7xbUr-UvTA=w923-h884-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/Hna1_pW1__N_0sdlhg1gnOdQ5uKZ5KVMouVUe4uIa_VGAu61F5ItUvh5x9ltEyeXT5VDWQJ2a4jiOTWn5jzm5T_mddUXHdK9t37OB1v7gxJO2s7k4yu-ZI2QtmYzRUqwRu79wxmgiXwdYqmf0goyRe08KW8pGEsGbB2E3A7svdRzqC1p30uiPk00ZkAlszUTRKTAdqN27iodgTBih_9FnvJithZspvCVdq-twblhn5wypdEtBsun76iPu0GpcV20OF1jNsPirDAm_njgXsvAOIddiUx0AbUjha1cwQAnGlxDeLYkcCRx9vmhtdA1bxFlEG6pNUD851zsOIXy_N66PFzRvgUoeQfhyVpTj8kB4YeP1B-ZL0JLiaUQPQE9bqTU59huTIDxfb9pSZ_2tKSMsVtwd58iU7Pvqgt2sk4cGmFTSxye2wCLhf89UPH_vOG_AdC4mvUG_dTItsKPtmibd891n0DPxj3n0RSL9ZfMIe6C1ccoeZjXhx7CUHIVFBrjmTe5U2Cq95aJFK4pgL1RbfmMYqsXwE4B5I38kadKY7EHT2fCRvvzawHEAzG6qB9Ikp2XJCn4uUpcHknN6ZstAXZnF6brU3gpvDmaFNDgiHGCog8FNVGXxOFqPirgtCHIoBTVNq_iEEb0GhXLPfCZGSVnYn3uRMh8KAc0H-o07s5_s_vLig56LwnkFD0FuCxGQyHYtUAbr9oA3F5UeDqk1brAQkJRDPaoZL1h9EdWa40P_HdCB6d1OUW1tcwi7UI-_LZ9MQ0kIVjTZ7Sh3_vdKe7mTVTbRwae7W271kQoNNcjuVBrjADm4HlyDgBIF4BRxjilZfEq6y9CazdiEDrGWCefHF_J2QPifxBUkV9rq8G5vB9pX6jQAWqj1pnijCy9a05UsYUR6BVVmAGzwByLgdWDPZuQw_GFks6yrT3R1-73dA=w759-h889-s-no?authuser=0)
+---
+![App Screenshot](https://lh3.googleusercontent.com/93HvS0WcI5t5eYOEwMNx2sirwMyEsUVJUGZa44uqmYnBCL5zAAdnUPLJnXccDFR_4_Y71haHOrTNwTx04H5YdiEp2LcsELyVLIay-lfm3b4gWXPUahIAl7SpWZcdXzIyLx2Sz2l2Uk25jsRR3Q8T0U4tYrualZFerENeODz3GL_abF-EicABLodCu2dVW75AsmVBg4n6RVio3W7Dvts7VYRq2rC-gJgdzAxjN8f0MXvBGv9sIhRDKuTu2U3lZ-z9h149AzCRNt2IF_nsG9EAlc-W2TycDdbs9AN7AzSHqhgnwPoTLNhZs49ZOHdUfRvqcBFJsQOpQ6Ta_Hh0DV-vm6FyWFAGr95sukJ2B735pt2OfKyQPZoP424G6vralBO4aG41E0VN2FReu_q-J3NfrJ77KCLG9OmvT9q-lSQuAf1vHDuxmTjmDYh3UhTOkssHMQx2WTBZi_kjRMu2KaZPGoNcgkuGguy6u1c2X8Ke3Sz8XfexmIgP32XoMTJs9oCov--vW5xnJu14TpOwOdOk14FgM3jj9zgVw1LsswTn3uk0Y7pg6yPijE4Ov9eDoH3jIQ9fH9r81kciEZPfij_1URB8D6-9HIYKTl0Y_PoYT62InjABmuMEneAvjKHrkGgSk_kB8Bqq3YWSauyt17mYJxZCbJhcywmjy0fQ2cOLSFbd3Z78xYUiqhwtkR_71ElX5_9JoSFy72mn6HGzu35xA7GfYCzU2cT82L0NvNLmo-pnbEEnbPkyA--litLxuLmwM2qR6MAVwjr39Y1hiMHy0uC0kvR0zLNCWQV_PFqeEi2PzelkYFH-LUJ0CUl8yBq5OMsaeFImn4tqVN52F54zDxCpYJS7PHbwq2vTdrArsABEitwbW5HnEZ8Bc7uM3UhyhPYdGagq2YErKHEqTGXEVW2sJLPOfqLCXKLxrJahrE296Q=w766-h886-s-no?authuser=0)
+---
+
