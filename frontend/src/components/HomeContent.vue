@@ -1,28 +1,20 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted} from 'vue';
-import Form from '@/components/Form.vue'
-import Nav from '@/components/Nav.vue'
-import Footer from '@/components/Footer.vue'
-import FirstSection from '@/components/FirstSection.vue'
-import SecondSection from '@/components/SecondSection.vue'
+import FormComponent from '@/components/FormComponent.vue'
+import NavComponent from '@/components/NavComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import FirstSectionComponent from '@/components/FirstSectionComponent.vue'
+import SecondSectionComponent from '@/components/SecondSectionComponent.vue'
 </script>
 
 <template>
-    
-<Nav />
-
+<NavComponent />
 <main class="h-screen">
- 
-
-  <FirstSection />
-  <SecondSection />
-
- <Form />
-  
-<Footer />
+  <FirstSectionComponent />
+  <SecondSectionComponent />
+  <FormComponent />
+  <FooterComponent />
 </main> 
-
-
 </template>
 
 
@@ -33,7 +25,5 @@ import SecondSection from '@/components/SecondSection.vue'
 .section-2{
   height: 80vh;
 };
-
-
 
 </style>

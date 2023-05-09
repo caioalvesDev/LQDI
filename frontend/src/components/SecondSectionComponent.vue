@@ -2,7 +2,7 @@
     <section class="px-4 lg:mt-56 grid lg:grid-cols-8 gap-20 lg:gap-6 section-2 mb-24 ">
         <div class=" bg-white  rounded-lg lg:col-span-2">
             <a href="#">
-                <img class=" rounded-2xl" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+                <img class="rounded-2xl" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
             </a>
             <div>
                 <a href="#">
